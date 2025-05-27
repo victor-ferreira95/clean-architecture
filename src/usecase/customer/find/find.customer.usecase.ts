@@ -15,6 +15,10 @@ export default class FindCustomerUseCase {
     // a nossa enitdade não pode passar pra fora da camada usecase
     const customer = await this.customerRepository.find(input.id)
 
+    if (!customer) {
+      throw new Error('Customer not found')
+    }
+
     return {
       id: customer.id,
       name: customer.name,
