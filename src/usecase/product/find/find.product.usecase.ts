@@ -9,16 +9,20 @@ export default class FindProductUseCase {
   }
 
   async execute(input: InputFindProductDto): Promise<OutputFindProductDto> {
-    const product = await this.productRepository.find(input.id)
+    try {
+      const product = await this.productRepository.find(input.id)
 
-    if (!product) {
+      if (!product) {
+        throw new Error('Product not found')
+      }
+
+      return {
+        id: product.id,
+        name: product.name,
+        price: product.price,
+      }
+    } catch (error) {
       throw new Error('Product not found')
-    }
-
-    return {
-      id: product.id,
-      name: product.name,
-      price: product.price,
     }
   }
 }
