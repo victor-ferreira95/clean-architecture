@@ -6,7 +6,7 @@ export const app: Express = express()
 
 app.use(express.json())
 
-let sequelize: Sequelize
+export let sequelize: Sequelize
 
 async function setupDb() {
   sequelize = new Sequelize({
