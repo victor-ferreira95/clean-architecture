@@ -6,9 +6,9 @@ describe('E2E test for customer', () => {
     await sequelize.sync({ force: true })
   })
 
-  afterEach(async () => {
-    await sequelize.close()
-  })
+  // afterEach(async () => {
+  //   await sequelize.close()
+  // })
 
   it('should create a customer', async () => {
     const response = await request(app)

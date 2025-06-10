@@ -61,4 +61,10 @@ describe('Customer unit test', () => {
     customer.addRewardPoints(10)
     expect(customer.rewardPoints).toBe(20)
   })
+
+  it('should throw error when id and name are empty', () => {
+    expect(() => {
+      const customer = new Customer('', '')
+    }).toThrow('customer: Id is required, customer: Name is required')
+  })
 })
