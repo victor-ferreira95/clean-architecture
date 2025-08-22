@@ -17,6 +17,7 @@
     "@swc/jest": "^0.2.36",
     "@types/express": "^5.0.2",
     "@types/jest": "^29.5.12",
+    "@types/jstoxml": "^5.0.0",
     "@types/supertest": "^6.0.3",
     "@types/uuid": "^9.0.8",
     "eslint": "^8.56.0",
@@ -28,6 +29,7 @@
   "dependencies": {
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "jstoxml": "^7.0.1",
     "mysql2": "^3.9.7",
     "reflect-metadata": "^0.2.2",
     "sequelize": "^6.37.3",

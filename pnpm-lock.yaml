@@ -11,6 +11,9 @@ dependencies:
   express:
     specifier: ^5.1.0
     version: 5.1.0
+  jstoxml:
+    specifier: ^7.0.1
+    version: 7.0.1
   mysql2:
     specifier: ^3.9.7
     version: 3.9.7
@@ -52,6 +55,9 @@ devDependencies:
   '@types/jest':
     specifier: ^29.5.12
     version: 29.5.12
+  '@types/jstoxml':
+    specifier: ^5.0.0
+    version: 5.0.0
   '@types/supertest':
     specifier: ^6.0.3
     version: 6.0.3
@@ -1207,6 +1213,10 @@ packages:
 
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: true
+
+  /@types/jstoxml@5.0.0:
+    resolution: {integrity: sha512-6W1oNiZ/frqtloQdjRm+UtZ0jioU4SMX7iU0OWistGQsr5nrrrhNs82O3Wa8csWKttCBifJTe+CDLFyzNkIOLQ==}
     dev: true
 
   /@types/keyv@3.1.4:
@@ -4505,6 +4515,10 @@ packages:
   /jsonc-parser@3.2.1:
     resolution: {integrity: sha512-AilxAyFOAcK5wA1+LeaySVBrHsGQvUFCDWXKpZjzaL0PqW+xfBOttn8GNtWKFWqneyMZj41MWF9Kl6iPWLwgOA==}
     dev: true
+
+  /jstoxml@7.0.1:
+    resolution: {integrity: sha512-yqCv6FoW1uTqtqO/wqQzvdRhVp+iIFwu153pLdSmJwlRRW3+eRWwfHjCE1E+06hB17s934iFDZI1GW0g4QvA8w==}
+    dev: false
 
   /jsx-ast-utils@3.3.5:
     resolution: {integrity: sha512-ZZow9HBI5O6EPgSJLUb8n2NKgmVWTwCvHGwFuJlMjvLFqlGG6pjirPhtdsseaLZjSibD8eegzmYpUZwoIlj2cQ==}
